@@ -1,0 +1,242 @@
+/**common css start*/
+:root {
+    --highlight-color: #8484bf;
+    --primary-color: #0f2f44;
+    --light-color: #fefefe;
+    --hover-color: #ffc712;
+    --icon-color: #999999;
+    --text-color: #444444;
+    --border-color: #dedede;
+    --hover-background: #fff9e6;
+    --heading-font: "Abril Fatface", serif;
+    --secondary-font: "Ubuntu", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    font-family: var(--body-font);
+}
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: var(--secondary-font);
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.w-50 {
+    width: 50%;
+}
+.w-33 {
+    width: calc(100% / 3);
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+/* Common Css End */
+
+/* top-bar satrt */
+#top-bar {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+}
+#top-bar p {
+    line-height: 24px;
+    padding: 13px 0;
+}
+/* Top-bar End */
+
+/*  Nav  Start */
+#nav .menu ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 35.5px 19px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+#nav .menu ul li button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--icon-color);
+    background: none;
+    margin-left: 20px;
+    transition: 0.4s;
+    margin-top: 35px;
+}
+#nav .menu ul li a:hover,
+#nav .menu ul li button:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-background);
+}
+/*  Nav  End  */
+
+/* banner start */
+#banner {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.banner-info h1{
+    color: var(--primary-color);
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 80px;
+    font-family:var(--heading-font)
+
+}
+.banner-info h2{
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+}
+.banner-info h4{
+    color: var(--highlight-color);
+    letter-spacing: 11px;
+    font-size: 32px;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+}
+.banner-info p{
+    margin-top: 36px;
+    font-size: 14px;
+
+}
+#banner .banner-info {
+    width: 40%;
+}
+#banner a {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: 22px;
+}
+#banner a:hover {
+    background-color: var(--light-color);
+    color: var(--highlight-color);
+}
+#banner button {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    border: none;
+    color: var(--highlight-color);
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.4s;
+    
+}
+#banner button:hover {
+    background-color: var(--highlight-color);
+    color: var(--light-color);
+}
+/* banner end */
+/** about start*/
+#about{
+    
+   background-image: url(../img/about\ img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    margin-top: 100px;
+    height: 520px;
+}
+.about-info p{
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-top: 11px;
+  text-align: left;
+  width: 50%;
+
+}
+.about-info h3{
+    font-size: 32px;
+    font-family: var(--heading-font);
+    color: #0f2f44;
+}
+.about-info ul li{
+    margin-top: 11px;
+    margin-left: 32px;
+    line-height:34px ;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+.about-info a{
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12.5px 21px;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-top: 22px;
+}
+.about-info a:hover{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 35.5px 19px;
+    display: inline-block;
+    transition: 0.4s;
+}
+/*abour ends*/
